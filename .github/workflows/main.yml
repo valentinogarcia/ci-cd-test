@@ -21,9 +21,6 @@ jobs:
       - name: 'Install npm dependencies'
         run: npm ci
 
-      - name: 'Build JS files'
-        run: npm run build
-
       - name: 'Build and push docker image'
         uses: docker/build-push-action@v4
         with:
